@@ -12,7 +12,7 @@ async function sendQuestion() {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer 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" // أدخل مفتاح API الخاص بك هنا
+      "Authorization": "Bearer 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" // أدخل مفتاح API الخاص بك هنا
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
