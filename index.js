@@ -1,3 +1,13 @@
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+function askQuestion() {
+  rl.question("Ask the AI a question: ", (userInput) => {
+    getResponseFromAI(userInput);
+  });
+}
 console.log("Hello, AI Debate Bot!");
 const { OpenAI } = require("openai");
 const openai = new OpenAI({
@@ -18,3 +28,4 @@ async function getResponseFromAI(prompt) {
 
 // اختبار البوت مع جملة بسيطة
 getResponseFromAI("Hello, how can I help you today?");
+askQuestion();
