@@ -1,13 +1,45 @@
 {
   "name": "ai-debate-bot",
   "version": "1.0.0",
-  "description": "A debate bot powered by AI",
+  "description": "AI Debate Bot - واجهة تفاعلية تُمكن المستخدم من التحدث مع نموذج الذكاء الاصطناعي",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "live-server --port=3000",
+    "dev": "nodemon index.js",
+    "test": "echo \"No tests yet\"",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
-  "dependencies": {}
-}
-"dependencies": {
-  "openai": "^3.0.0"
+  "keywords": [
+    "AI",
+    "Chatbot",
+    "OpenAI",
+    "Debate",
+    "Bot",
+    "Frontend",
+    "Backend"
+  ],
+  "author": "اسمك هنا",
+  "license": "MIT",
+  "dependencies": {
+    "openai": "^3.2.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.2",
+    "eslint": "^8.50.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/اسم_المستخدم/ai-debate-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/اسم_المستخدم/ai-debate-bot/issues"
+  },
+  "homepage": "https://github.com/اسم_المستخدم/ai-debate-bot#readme"
 }
