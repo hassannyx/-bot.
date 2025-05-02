@@ -1,0 +1,10 @@
+{
+  "name": "ai-debate-bot",
+  "version": "1.0.0",
+  "description": "A debate bot powered by AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {}
+}
