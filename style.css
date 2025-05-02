@@ -1,86 +1,81 @@
-/* إعدادات أساسية */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #2c3e50, #3498db);
+/* خطوط جميلة */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap');
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  padding: 20px;
 }
 
-/* الحاوية الرئيسية */
 .container {
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  padding: 30px 25px;
-  width: 90%;
-  max-width: 480px;
-  text-align: center;
-  animation: fadeIn 0.8s ease-in-out;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
 }
 
-/* عنوان رئيسي */
 h1 {
   font-size: 28px;
-  color: #2c3e50;
   margin-bottom: 20px;
+  text-align: center;
+  color: #f1c40f;
 }
 
-/* خانة الإدخال */
 textarea {
   width: 100%;
-  height: 120px;
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
+  min-height: 120px;
   border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  font-size: 16px;
   resize: vertical;
-  transition: border-color 0.3s ease;
+  margin-bottom: 15px;
+  background: #fefefe;
+  color: #333;
 }
 
-textarea:focus {
-  outline: none;
-  border-color: #3498db;
-}
-
-/* زر الإرسال */
 button {
-  margin-top: 15px;
-  padding: 12px;
-  background-color: #3498db;
-  color: white;
+  width: 100%;
+  padding: 15px;
   border: none;
   border-radius: 8px;
-  font-size: 17px;
+  background-color: #f1c40f;
+  color: #000;
   font-weight: bold;
+  font-size: 18px;
   cursor: pointer;
-  width: 100%;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #2980b9;
+  background-color: #e1b200;
+  transform: scale(1.02);
 }
 
-/* صندوق الرد */
 .response-box {
   margin-top: 25px;
-  padding: 15px;
-  background-color: #f0f6fa;
+  background-color: #222;
   border-radius: 8px;
-  border: 1px solid #d0e3f1;
-  min-height: 100px;
-  color: #333;
-  text-align: left;
+  padding: 20px;
+  font-size: 16px;
   white-space: pre-wrap;
   line-height: 1.6;
-}
-
-/* حركة بسيطة */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  border: 1px solid #444;
+  max-height: 400px;
+  overflow-y: auto;
 }
