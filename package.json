@@ -4,9 +4,9 @@
   "description": "AI Debate Bot - واجهة تفاعلية تُمكن المستخدم من التحدث مع نموذج الذكاء الاصطناعي",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js",  // تأكد من أن هذا السطر موجود
     "dev": "nodemon index.js",
-    "test": "echo \"No tests yet\"",
+    "test": "echo \"No tests yet\" && exit 1",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
