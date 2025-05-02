@@ -19,7 +19,7 @@
     "Frontend",
     "Backend"
   ],
-  "author": "Your Name",
+  "author": "Nyx",
   "license": "MIT",
   "dependencies": {
     "openai": "^3.2.1",
